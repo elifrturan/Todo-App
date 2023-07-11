@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="todo.css">
+    <title>todo App</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">Todo App</h1>
+            <form class="search">
+                <input class="form-control" type="text" name="search" placeholder="Ara...">
+            </form>
+        </header>
+
+        <ul class="list-group text-light my-4 todos">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Yüzmeye git</span>
+                <i class="fa-regular fa-trash-can delete"></i>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Manavdan limon al</span>
+                <i class="fa-regular fa-trash-can delete"></i>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Js çalış</span>
+                <i class="fa-regular fa-trash-can delete"></i>
+            </li>
+        </ul>
+
+        <form class="text-center my-4 add">
+            <label class="text-light">Yeni İş Ekle</label>
+            <input class="form-control m-auto mt-1" type="text" name="add">
+        </form>
+    </div>
+
+    <script src="https://kit.fontawesome.com/46bb5d8e1e.js" crossorigin="anonymous"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
